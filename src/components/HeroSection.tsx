@@ -22,12 +22,12 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
           {/* Left content */}
           <div className="max-w-2xl">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-medium text-white leading-tight mb-4 animate-fade-in">
-              <span className="italic">Introducing</span>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-medium text-foreground leading-tight mb-4 animate-fade-in">
+              <span className="font-serif italic">Introducing</span>
               <br />
               <span className="font-semibold">Curated.Media</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/80 mb-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <p className="text-xl md:text-2xl text-foreground/80 mb-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
               Supply Side Trader®
             </p>
             <div className="flex flex-wrap gap-3 animate-fade-in" style={{ animationDelay: "0.4s" }}>
@@ -43,13 +43,13 @@ const HeroSection = () => {
           {/* Right content - Scroll indicator */}
           <div className="hidden lg:flex flex-col items-end gap-4 text-right animate-fade-in" style={{ animationDelay: "0.6s" }}>
             <div className="glass-nav rounded-2xl p-6 flex flex-col items-center gap-3">
-              <p className="text-white text-lg font-medium">
+              <p className="text-foreground text-lg font-medium">
                 Scroll down
                 <br />
                 & discover
               </p>
-              <div className="w-10 h-10 rounded-full border-2 border-white/30 flex items-center justify-center animate-float">
-                <ArrowDown className="h-5 w-5 text-white" />
+              <div className="w-10 h-10 rounded-full border-2 border-foreground/30 flex items-center justify-center animate-float">
+                <ArrowDown className="h-5 w-5 text-foreground" />
               </div>
             </div>
           </div>
@@ -58,8 +58,8 @@ const HeroSection = () => {
 
       {/* Mobile scroll indicator */}
       <div className="lg:hidden absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <div className="w-8 h-8 rounded-full border-2 border-white/30 flex items-center justify-center animate-float">
-          <ArrowDown className="h-4 w-4 text-white" />
+        <div className="w-8 h-8 rounded-full border-2 border-foreground/30 flex items-center justify-center animate-float">
+          <ArrowDown className="h-4 w-4 text-foreground" />
         </div>
       </div>
     </section>

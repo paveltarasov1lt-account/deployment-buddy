@@ -3,6 +3,9 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import FeatureSection from "@/components/FeatureSection";
 import UseCasesSection from "@/components/UseCasesSection";
+import HowItWorksSection from "@/components/HowItWorksSection";
+import ScrollingCarousel from "@/components/ScrollingCarousel";
+import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -18,12 +21,15 @@ const Index = () => {
         <link rel="canonical" href="https://curated.media" />
       </Helmet>
 
-      <div className="min-h-screen">
+      <div className="min-h-screen bg-background">
         <Header />
         <main>
           <HeroSection />
           <FeatureSection />
           <UseCasesSection />
+          <HowItWorksSection />
+          <ScrollingCarousel />
+          <CTASection />
         </main>
         <Footer />
       </div>
