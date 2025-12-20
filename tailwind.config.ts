@@ -15,6 +15,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ["DM Sans", "sans-serif"],
+        serif: ["Instrument Serif", "serif"],
+        mono: ["Fira Code", "monospace"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -61,10 +63,9 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         curated: {
-          purple: "hsl(var(--curated-purple))",
-          lavender: "hsl(var(--curated-lavender))",
           deep: "hsl(var(--curated-deep))",
-          glass: "hsl(var(--curated-glass))",
+          primary: "hsl(var(--curated-primary))",
+          lavender: "hsl(var(--curated-lavender))",
           glow: "hsl(var(--curated-glow))",
         },
       },
@@ -88,16 +89,30 @@ export default {
           from: { opacity: "0", transform: "translateY(20px)" },
           to: { opacity: "1", transform: "translateY(0)" },
         },
+        "fade-in-up": {
+          from: { opacity: "0", transform: "translateY(30px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
         "float": {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
+        },
+        "scroll-left": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "typing": {
+          from: { width: "0" },
+          to: { width: "100%" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.6s ease-out forwards",
+        "fade-in-up": "fade-in-up 0.8s ease-out forwards",
         "float": "float 3s ease-in-out infinite",
+        "scroll-left": "scroll-left 30s linear infinite",
       },
     },
   },
